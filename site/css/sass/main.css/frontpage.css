@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  margin: 0px;
+  background: #DFCCAE; }
+
+.wrap {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .wrap:last-child {
+    margin-right: 0; }
+
+.nav {
+  background: #F4821C;
+  border-bottom: 1px solid #EFEFEF;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 100px; }
+  .nav:last-child {
+    margin-right: 0; }
+  .nav .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 25.58941%;
+    margin-top: 0px; }
+    .nav .logo:last-child {
+      margin-right: 0; }
+    .nav .logo img {
+      margin-left: 29.85432%;
+      text-align: center;
+      margin-top: 40px; }
+
+.posts {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  font-family: open sans; }
+  .posts::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/*# sourceMappingURL=frontpage.css.map */

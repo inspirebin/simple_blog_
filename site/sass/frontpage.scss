@@ -1,0 +1,96 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "variables";
+@import "normalize";
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic);
+body{
+    margin: 0px;
+    background: $sandal;
+}
+.wrap{
+}
+.nav{
+    background: $mango;
+    border-bottom: 1px solid $white;
+    height:100px;
+      .logo {
+          margin-top: 0px;
+      img{
+          @include span-columns(12);
+          width: 137px;
+          height: 137px;
+          position: absolute;
+          left: 50%;
+          top:90px;
+          transform: translate(-50%, -50%);
+      }
+      }
+        }
+.post{
+    @include outer-container;
+    margin-top: 100px;
+    background: white;
+ .section{
+     width: 70%;
+     margin:0 auto;
+     padding-bottom: 5%;
+ }
+     h1{
+         @include playfair;
+         font-style: italic;
+         font-weight: 400;
+         color: $brown;
+         text-align: left;
+         font-size: 36px;
+     }
+     h1::first-letter{
+         font-weight: 700;
+         font-size: 40px;
+     }
+     p{
+         outline-offset: 110px;
+         text-align-last: center;
+         font-family: open sans;
+         font-weight: 400;
+         margin: 5% auto;
+     }
+     .readmore{
+         text-decoration-color: $sandal;
+         text-decoration: overline;
+         color: $brown;
+         display: block;
+         float: right;
+         @include playfair;
+         border-bottom: 2px inset $brown;
+
+     }
+    .readmore:hover{
+         color: $mango;
+     }
+    
+}
+
+
+.post_header{
+@include outer-container;
+background: $offwhite;
+padding: 1%;
+font-family: open sans light;
+span{
+  @include span-columns(4);
+  text-align: center;
+  color: $brown;
+  text-decoration: none;
+}
+    
+}
+
+.footer{
+    @include playfair;
+    margin: 100px;
+    text-align: center;
+}
+
+
+
+/*sass --watch sass/frontpage.scss:css\main.css*/
